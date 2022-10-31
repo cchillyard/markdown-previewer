@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-gap: 20px;
+  background-color: gray;
+}
+
+.window {
+  border: 1px solid black;
+  width: 80%;
+  box-shadow: 0 0 10px 5px #999;
+  background-color: lightgray;
+  header {
+    background-color: lightgreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    h1 {
+      display: inline;
+      padding: 10px;
+    }
+    button {
+      height: 80%;
+      width: 10%;
+      justify-self: right;
+      border: none;
+      background-color: inherit;
+    }
+  }
+  textarea {
+    border: none;
+    width: 100%;
+    resize: vertical;
+    overflow: auto;
+    min-height: 200px;
+    background-color: inherit;
+  }
+  code {
+    background-color: white;
+  }
+  pre {
+    background-color: white;
+  }
+  table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    td, th {
+      border: 2px solid black;
+      padding: 10px;
+    }
+  }
+}
+
+#preview, #editor {
+  padding: 10px
+}
